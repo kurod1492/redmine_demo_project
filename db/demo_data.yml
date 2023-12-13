@@ -1,21 +1,125 @@
 demo_data:
   # ユーザー
   users:
-    testuser1:
-      login: 'testuser1'
-      password: 'testpassword1'
-      password_confirmation: 'testpassword1'
-      firstname: 'test'
-      lastname: 'user1'
-      mail: 'testuser1@farend.jp'
-
-    testuser2:
-      login: 'testuser2'
-      password: 'testpassword2'
-      password_confirmation: 'testpassword2'
-      firstname: 'test'
-      lastname: 'user2'
-      mail: 'testuser2@farend.jp'
+    yamada_taro:
+      login: 'yamada_taro'
+      password: 'password'
+      password_confirmation: 'password'
+      firstname: '山田'
+      lastname: '太郎'
+      mail: 'yamada.taro@example.jp'
+    sato_hanako:
+      login: 'sato_hanako'
+      password: 'password'
+      password_confirmation: 'password'
+      firstname: '佐藤'
+      lastname: '花子'
+      mail: 'sato.hanako@example.jp'
+    ito_kenta:
+      login: 'ito_kenta'
+      password: 'password'
+      password_confirmation: 'password'
+      firstname: '伊藤'
+      lastname: '健太'
+      mail: 'ito.kenta@example.jp'
+    tanaka_mami:
+      login: 'tanaka_mami'
+      password: 'password'
+      password_confirmation: 'password'
+      firstname: '田中'
+      lastname: '真美'
+      mail: 'tanaka.mami@example.jp'
+    watanabe_hiroyuki:
+      login: 'watanabe_hiroyuki'
+      password: 'password'
+      password_confirmation: 'password'
+      firstname: '渡辺'
+      lastname: '博之'
+      mail: 'watanabe.hiroyuki@example.jp'
+    nakamura_satoko:
+      login: 'nakamura_satoko'
+      password: 'password'
+      password_confirmation: 'password'
+      firstname: '中村'
+      lastname: '聡子'
+      mail: 'nakamura.satoko@example.jp'
+    kobayashi_hideaki:
+      login: 'kobayashi_hideaki'
+      password: 'password'
+      password_confirmation: 'password'
+      firstname: '小林'
+      lastname: '英明'
+      mail: 'kobayashi.hideaki@example.jp'
+    kato_miho:
+      login: 'kato_miho'
+      password: 'password'
+      password_confirmation: 'password'
+      firstname: '加藤'
+      lastname: '美穂'
+      mail: 'kato.miho@example.jp'
+    yoshida_koji:
+      login: 'yoshida_koji'
+      password: 'password'
+      password_confirmation: 'password'
+      firstname: '吉田'
+      lastname: '光司'
+      mail: 'yoshida.koji@example.jp'
+    yamamoto_mika:
+      login: 'yamamoto_mika'
+      password: 'password'
+      password_confirmation: 'password'
+      firstname: '山本'
+      lastname: '美香'
+      mail: 'yamamoto.mika@example.jp'
+    yamaguchi_takuya:
+      login: 'yamaguchi_takuya'
+      password: 'password'
+      password_confirmation: 'password'
+      firstname: '山口'
+      lastname: '拓也'
+      mail: 'yamaguchi.takuya@example.jp'
+    takahashi_chihiro:
+      login: 'takahashi_chihiro'
+      password: 'password'
+      password_confirmation: 'password'
+      firstname: '高橋'
+      lastname: '千尋'
+      mail: 'takahashi.chihiro@example.jp'
+    saito_ryutaro:
+      login: 'saito_ryutaro'
+      password: 'password'
+      password_confirmation: 'password'
+      firstname: '斉藤'
+      lastname: '龍太郎'
+      mail: 'saito.ryutaro@example.jp'
+    yamada_kaori:
+      login: 'yamada_kaori'
+      password: 'password'
+      password_confirmation: 'password'
+      firstname: '山田'
+      lastname: 'かおり'
+      mail: 'yamada.kaori@example.jp'
+    sasaki_eiji:
+      login: 'sasaki_eiji'
+      password: 'password'
+      password_confirmation: 'password'
+      firstname: '佐々木'
+      lastname: '英司'
+      mail: 'sasaki.eiji@example.jp'
+    matsumoto_kyoko:
+      login: 'matsumoto_kyoko'
+      password: 'password'
+      password_confirmation: 'password'
+      firstname: '松本'
+      lastname: '恭子'
+      mail: 'matsumoto.kyoko@example.jp'
+    yamamoto_takashi:
+      login: 'yamamoto_takashi'
+      password: 'password'
+      password_confirmation: 'password'
+      firstname: '山本'
+      lastname: '貴史'
+      mail: 'yamamoto.takashi@example.jp'
 
   # トラッカー
   trackers:
@@ -53,18 +157,18 @@ demo_data:
     # 新製品紹介セミナー開催 のメンバー
     product_intro_seminar_member_1:
       project_identifier: 'product_intro_seminar'
-      user_login: 'testuser1'
+      user_login: 'yamada_taro'
     product_intro_seminar_member_2:
       project_identifier: 'product_intro_seminar'
-      user_login: 'testuser2'
+      user_login: 'sato_hanako'
 
     # 新顧客管理システム開発 のメンバー
     new_crm_dev_member_1:
       project_identifier: 'new_crm_dev'
-      user_login: 'testuser1'
+      user_login: 'yamada_taro'
     new_crm_dev_member_2:
       project_identifier: 'new_crm_dev'
-      user_login: 'testuser2'
+      user_login: 'sato_hanako'
 
   # バージョン
   versions:
@@ -121,7 +225,7 @@ demo_data:
       project_identifier: 'product_intro_seminar'
       attachment_filename: 'tokyo_seminar_leaflet.pdf'
       attachment_description: '東京会場のセミナーリーフレット'
-      author_user_login: "testuser1"
+      author_user_login: "yamada_taro"
 
   # チケット
   issues:
@@ -133,7 +237,7 @@ demo_data:
       end_date: <%= Date.today - 70 %>
       due_date: <%= Date.today - 60 %>
       project_identifier: "product_intro_seminar"
-      assigned_user_login: "testuser1"
+      assigned_user_login: "yamada_taro"
       fixed_version_name: "東京会場"
       status_name: "終了"
       tracker_name: "タスク"
@@ -145,7 +249,7 @@ demo_data:
       end_date: <%= Date.today - 20 %>
       due_date: <%= Date.today - 10 %>
       project_identifier: "product_intro_seminar"
-      assigned_user_login: "testuser1"
+      assigned_user_login: "yamada_taro"
       fixed_version_name: "東京会場"
       status_name: "終了"
       tracker_name: "タスク"
@@ -157,7 +261,7 @@ demo_data:
       end_date: <%= Date.today - 60 %>
       due_date: <%= Date.today - 60 %>
       project_identifier: "product_intro_seminar"
-      assigned_user_login: "testuser1"
+      assigned_user_login: "yamada_taro"
       fixed_version_name: "東京会場"
       status_name: "終了"
       tracker_name: "タスク"
@@ -169,7 +273,7 @@ demo_data:
       end_date: <%= Date.today - 60 %>
       due_date: <%= Date.today - 10 %>
       project_identifier: "product_intro_seminar"
-      assigned_user_login: "testuser2"
+      assigned_user_login: "sato_hanako"
       fixed_version_name: "東京会場"
       status_name: "終了"
       tracker_name: "タスク"
@@ -181,7 +285,7 @@ demo_data:
       end_date: <%= Date.today - 65 %>
       due_date: <%= Date.today - 10 %>
       project_identifier: "product_intro_seminar"
-      assigned_user_login: "testuser2"
+      assigned_user_login: "sato_hanako"
       fixed_version_name: "東京会場"
       status_name: "終了"
       tracker_name: "タスク"
@@ -193,7 +297,7 @@ demo_data:
       end_date: <%= Date.today - 60 %>
       due_date: <%= Date.today - 40 %>
       project_identifier: "product_intro_seminar"
-      assigned_user_login: "testuser1"
+      assigned_user_login: "yamada_taro"
       fixed_version_name: "東京会場"
       status_name: "終了"
       tracker_name: "タスク"
@@ -205,7 +309,7 @@ demo_data:
       end_date: <%= Date.today - 60 %>
       due_date: <%= Date.today - 55 %>
       project_identifier: "product_intro_seminar"
-      assigned_user_login: "testuser1"
+      assigned_user_login: "yamada_taro"
       fixed_version_name: "東京会場"
       status_name: "終了"
       tracker_name: "タスク"
@@ -217,7 +321,7 @@ demo_data:
       end_date: <%= Date.today - 60 %>
       due_date: <%= Date.today - 55 %>
       project_identifier: "product_intro_seminar"
-      assigned_user_login: "testuser1"
+      assigned_user_login: "yamada_taro"
       fixed_version_name: "東京会場"
       status_name: "終了"
       tracker_name: "タスク"
@@ -229,7 +333,7 @@ demo_data:
       end_date: <%= Date.today - 40 %>
       due_date: <%= Date.today - 40 %>
       project_identifier: "product_intro_seminar"
-      assigned_user_login: "testuser1"
+      assigned_user_login: "yamada_taro"
       fixed_version_name: "東京会場"
       status_name: "終了"
       tracker_name: "タスク"
@@ -241,7 +345,7 @@ demo_data:
       end_date: <%= Date.today - 20 %>
       due_date: <%= Date.today - 15 %>
       project_identifier: "product_intro_seminar"
-      assigned_user_login: "testuser1"
+      assigned_user_login: "yamada_taro"
       fixed_version_name: "東京会場"
       status_name: "終了"
       tracker_name: "タスク"
@@ -253,7 +357,7 @@ demo_data:
       end_date: <%= Date.today - 15 %>
       due_date: <%= Date.today - 15 %>
       project_identifier: "product_intro_seminar"
-      assigned_user_login: "testuser1"
+      assigned_user_login: "yamada_taro"
       fixed_version_name: "東京会場"
       status_name: "終了"
       tracker_name: "タスク"
@@ -265,7 +369,7 @@ demo_data:
       end_date: <%= Date.today - 20 %>
       due_date: <%= Date.today - 20 %>
       project_identifier: "product_intro_seminar"
-      assigned_user_login: "testuser1"
+      assigned_user_login: "yamada_taro"
       fixed_version_name: "東京会場"
       status_name: "終了"
       tracker_name: "タスク"
@@ -277,7 +381,7 @@ demo_data:
       end_date: <%= Date.today - 25 %>
       due_date: <%= Date.today - 30 %>
       project_identifier: "product_intro_seminar"
-      assigned_user_login: "testuser1"
+      assigned_user_login: "yamada_taro"
       fixed_version_name: "東京会場"
       status_name: "終了"
       tracker_name: "タスク"
@@ -289,7 +393,7 @@ demo_data:
       end_date: <%= Date.today - 20 %>
       due_date: <%= Date.today - 25 %>
       project_identifier: "product_intro_seminar"
-      assigned_user_login: "testuser1"
+      assigned_user_login: "yamada_taro"
       fixed_version_name: "東京会場"
       status_name: "終了"
       tracker_name: "タスク"
@@ -301,7 +405,7 @@ demo_data:
       end_date: <%= Date.today - 18 %>
       due_date: <%= Date.today - 25 %>
       project_identifier: "product_intro_seminar"
-      assigned_user_login: "testuser1"
+      assigned_user_login: "yamada_taro"
       fixed_version_name: "東京会場"
       status_name: "終了"
       tracker_name: "タスク"
@@ -313,7 +417,7 @@ demo_data:
       end_date: <%= Date.today - 13 %>
       due_date: <%= Date.today - 13 %>
       project_identifier: "product_intro_seminar"
-      assigned_user_login: "testuser1"
+      assigned_user_login: "yamada_taro"
       fixed_version_name: "東京会場"
       status_name: "終了"
       tracker_name: "タスク"
@@ -327,7 +431,7 @@ demo_data:
       end_date: <%= Date.today - 13 %>
       due_date: <%= Date.today - 13 %>
       project_identifier: "product_intro_seminar"
-      assigned_user_login: "testuser1"
+      assigned_user_login: "yamada_taro"
       fixed_version_name: "東京会場"
       status_name: "終了"
       tracker_name: "タスク"
@@ -339,7 +443,7 @@ demo_data:
       end_date: <%= Date.today - 13 %>
       due_date: <%= Date.today - 13 %>
       project_identifier: "product_intro_seminar"
-      assigned_user_login: "testuser1"
+      assigned_user_login: "yamada_taro"
       fixed_version_name: "東京会場"
       status_name: "終了"
       tracker_name: "タスク"
@@ -351,7 +455,7 @@ demo_data:
       end_date: <%= Date.today - 14 %>
       due_date: <%= Date.today - 14 %>
       project_identifier: "product_intro_seminar"
-      assigned_user_login: "testuser1"
+      assigned_user_login: "yamada_taro"
       fixed_version_name: "東京会場"
       status_name: "終了"
       tracker_name: "タスク"
@@ -363,7 +467,7 @@ demo_data:
       end_date: <%= Date.today - 13 %>
       due_date: <%= Date.today - 13 %>
       project_identifier: "product_intro_seminar"
-      assigned_user_login: "testuser1"
+      assigned_user_login: "yamada_taro"
       fixed_version_name: "東京会場"
       status_name: "終了"
       tracker_name: "タスク"
@@ -375,7 +479,7 @@ demo_data:
       # end_date:
       due_date: <%= Date.today - 5 %>
       project_identifier: "product_intro_seminar"
-      assigned_user_login: "testuser1"
+      assigned_user_login: "yamada_taro"
       fixed_version_name: "東京会場"
       status_name: "進行中"
       tracker_name: "タスク"
@@ -387,7 +491,7 @@ demo_data:
       # end_date:
       due_date: <%= Date.today + 5 %>
       project_identifier: "product_intro_seminar"
-      assigned_user_login: "testuser1"
+      assigned_user_login: "yamada_taro"
       fixed_version_name: "東京会場"
       status_name: "新規"
       tracker_name: "タスク"
@@ -400,7 +504,7 @@ demo_data:
       end_date: <%= Date.today - 65 %>
       due_date: <%= Date.today - 40 %>
       project_identifier: "product_intro_seminar"
-      assigned_user_login: "testuser1"
+      assigned_user_login: "yamada_taro"
       fixed_version_name: "大阪会場"
       status_name: "終了"
       tracker_name: "タスク"
@@ -412,7 +516,7 @@ demo_data:
       # end_date:
       due_date: <%= Date.today + 10 %>
       project_identifier: "product_intro_seminar"
-      assigned_user_login: "testuser1"
+      assigned_user_login: "yamada_taro"
       fixed_version_name: "大阪会場"
       status_name: "進行中"
       tracker_name: "タスク"
@@ -424,7 +528,7 @@ demo_data:
       end_date: <%= Date.today - 35 %>
       due_date: <%= Date.today - 40 %>
       project_identifier: "product_intro_seminar"
-      assigned_user_login: "testuser1"
+      assigned_user_login: "yamada_taro"
       fixed_version_name: "大阪会場"
       status_name: "終了"
       tracker_name: "タスク"
@@ -436,7 +540,7 @@ demo_data:
       end_date: <%= Date.today - 60 %>
       due_date: <%= Date.today + 10 %>
       project_identifier: "product_intro_seminar"
-      assigned_user_login: "testuser1"
+      assigned_user_login: "yamada_taro"
       fixed_version_name: "大阪会場"
       status_name: "終了"
       tracker_name: "タスク"
@@ -448,7 +552,7 @@ demo_data:
       end_date: <%= Date.today - 50 %>
       due_date: <%= Date.today + 10 %>
       project_identifier: "product_intro_seminar"
-      assigned_user_login: "testuser1"
+      assigned_user_login: "yamada_taro"
       fixed_version_name: "大阪会場"
       status_name: "終了"
       tracker_name: "タスク"
@@ -460,7 +564,7 @@ demo_data:
       end_date: <%= Date.today - 20 %>
       due_date: <%= Date.today - 20 %>
       project_identifier: "product_intro_seminar"
-      assigned_user_login: "testuser1"
+      assigned_user_login: "yamada_taro"
       fixed_version_name: "大阪会場"
       status_name: "終了"
       tracker_name: "タスク"
@@ -472,7 +576,7 @@ demo_data:
       end_date: <%= Date.today - 55 %>
       due_date: <%= Date.today - 35 %>
       project_identifier: "product_intro_seminar"
-      assigned_user_login: "testuser1"
+      assigned_user_login: "yamada_taro"
       fixed_version_name: "大阪会場"
       status_name: "終了"
       tracker_name: "タスク"
@@ -484,7 +588,7 @@ demo_data:
       end_date: <%= Date.today - 60 %>
       due_date: <%= Date.today - 35 %>
       project_identifier: "product_intro_seminar"
-      assigned_user_login: "testuser1"
+      assigned_user_login: "yamada_taro"
       fixed_version_name: "大阪会場"
       status_name: "終了"
       tracker_name: "タスク"
@@ -496,7 +600,7 @@ demo_data:
       end_date: <%= Date.today - 40 %>
       due_date: <%= Date.today - 20 %>
       project_identifier: "product_intro_seminar"
-      assigned_user_login: "testuser1"
+      assigned_user_login: "yamada_taro"
       fixed_version_name: "大阪会場"
       status_name: "終了"
       tracker_name: "タスク"
@@ -508,7 +612,7 @@ demo_data:
       end_date: <%= Date.today - 5 %>
       due_date: <%= Date.today + 0 %>
       project_identifier: "product_intro_seminar"
-      assigned_user_login: "testuser1"
+      assigned_user_login: "yamada_taro"
       fixed_version_name: "大阪会場"
       status_name: "終了"
       tracker_name: "タスク"
@@ -520,7 +624,7 @@ demo_data:
       # end_date: 
       due_date: <%= Date.today + 7 %>
       project_identifier: "product_intro_seminar"
-      assigned_user_login: "testuser1"
+      assigned_user_login: "yamada_taro"
       fixed_version_name: "大阪会場"
       status_name: "進行中"
       tracker_name: "タスク"
@@ -532,7 +636,7 @@ demo_data:
       # end_date: 
       due_date: <%= Date.today + 7 %>
       project_identifier: "product_intro_seminar"
-      assigned_user_login: "testuser1"
+      assigned_user_login: "yamada_taro"
       fixed_version_name: "大阪会場"
       status_name: "進行中"
       tracker_name: "タスク"
@@ -544,7 +648,7 @@ demo_data:
       # end_date: 
       due_date: <%= Date.today + 6 %>
       project_identifier: "product_intro_seminar"
-      assigned_user_login: "testuser1"
+      assigned_user_login: "yamada_taro"
       fixed_version_name: "大阪会場"
       status_name: "進行中"
       tracker_name: "タスク"
@@ -556,7 +660,7 @@ demo_data:
       # end_date: 
       due_date: <%= Date.today + 7 %>
       project_identifier: "product_intro_seminar"
-      assigned_user_login: "testuser1"
+      assigned_user_login: "yamada_taro"
       fixed_version_name: "大阪会場"
       status_name: "新規"
       tracker_name: "タスク"
@@ -568,7 +672,7 @@ demo_data:
       # end_date: 
       due_date: <%= Date.today + 15 %>
       project_identifier: "product_intro_seminar"
-      assigned_user_login: "testuser1"
+      assigned_user_login: "yamada_taro"
       fixed_version_name: "大阪会場"
       status_name: "新規"
       tracker_name: "タスク"
@@ -580,7 +684,7 @@ demo_data:
       # end_date: 
       due_date: <%= Date.today + 25 %>
       project_identifier: "product_intro_seminar"
-      assigned_user_login: "testuser1"
+      assigned_user_login: "yamada_taro"
       fixed_version_name: "大阪会場"
       status_name: "新規"
       tracker_name: "タスク"
@@ -599,14 +703,14 @@ demo_data:
       title: 'Wiki'
       content:
         text: "Wiki\r\n\r\nh2. [[セミナーの会場設営について]]\r\n\r\nh2. [[セミナー当日までの協議メモ]]"
-        author_login: "testuser1"
+        author_login: "yamada_taro"
     product_intro_seminar_wiki_site_management:
       project_identifier: "product_intro_seminar"
       parent_title: "Wiki"
       title: 'セミナーの会場設営について'
       content:
         text: "h1. セミナーの会場設営について\r\n\r\nh2. \r\n* [[東京会場]]\r\n* [[大阪会場]]"
-        author_login: "testuser1"
+        author_login: "yamada_taro"
     product_intro_seminar_wiki_tokyo:
       project_identifier: "product_intro_seminar"
       parent_title: 'セミナーの会場設営について'
@@ -615,12 +719,12 @@ demo_data:
       attachment_description: '東京会場のフロアマップ'
       content:
         text: "h1. 東京会場\r\n\r\nh2. 会場\r\n\r\n東京ビッグサイト（東京国際展示場）\r\n\r\n〒１３５－００６３\r\n東京都江東区有明三丁目１１番１号\r\n\r\nwww.bigsight.jp/\r\n\r\nh2. 展示場（ホール）\r\n\r\n今回利用するのは、 *東展示棟 第一ホール*\r\n\r\n!tokyo_seminar_floormap.jpg!\r\n\r\nh2. ブース\r\n\r\nエリア：「 *５−D* 」にブースを設営します。\r\n\r\nh2. 展示準備について"
-        author_login: "testuser1"
+        author_login: "yamada_taro"
   # News
   news:
     product_intro_seminar_news:
       project_identifier: "product_intro_seminar"
-      author_login: "testuser1"
+      author_login: "yamada_taro"
       title: "東京でのセミナーは大盛況でした！"
       summary: "東京ビッグサイトにて新製品紹介セミナーを無事開催しました。\r\n当日の来場者数は5,000人、開場時間の9:50より１時間前からビッグサイト内には入場を待つ来場者が長蛇の列を..."
       description: "東京ビッグサイトにて新製品紹介セミナーを無事開催しました。\r\n当日の来場者数は5,000人、開場時間の9:50より１時間前からビッグサイト内には入場を待つ来場者が長蛇の列を...\r\n\r\n!tokyo_seminar_appearance.jpg!"
